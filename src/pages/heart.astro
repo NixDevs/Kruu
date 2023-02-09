@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="Welcome to Astro.">
+	<main>
+		<h1><span class="text-gradient">TrustedUp</span></h1>
+        <p class="instructions"><a href="/"><strong>Back Home</strong></a></p>
+        <img src="heart.png" class="center">
+        <p class="white">Measuring heart beat... Unfortunately, we cannot support such a feature yet!</p>
+
+	</main>
+</Layout>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+        font-family: 'Comfortaa', cursive;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        animation: pulse 1s linear infinite;
+
+    }
+    .white {
+        color: white;
+        text-align: center;
+        font-size: x-large;
+        
+    }
+    @-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.075);
+        transform: scale(1.075);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+</style>

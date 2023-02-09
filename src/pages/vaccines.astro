@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Vaccine Information">
+    <main>
+        <h1><span class="text-gradient">Vaccine Information</span></h1>
+        <p class="instructions"><a href="/"><strong>Back Home</strong></a></p>
+        <div class="blog">
+            <h2>What are vaccines and how do they work?</h2>
+            <p>
+                Both in our environment and on our bodies, germs are all around us. 
+                A dangerous organism can cause disease and even death when it comes into contact with a vulnerable individual.
+                <br>
+                The body has a variety of mechanisms for protecting itself from infections (disease-causing organisms). 
+                Physical barriers such as skin, mucus, and cilia (tiny hairs that carry material away from the lungs) all 
+                function to stop pathogens from ever entering the body.
+            </p>
+            <img 
+            src="https://khn.org/wp-content/uploads/sites/2/2021/03/GettyImages-1293223041_1350.jpg"
+            width="400px"
+            height="250px"
+            >
+            <h2>Our bodies' natural response.</h2>
+            <p>
+                A bacterium, virus, parasite, or fungus that can infect the body with disease is referred to as a pathogen. 
+                Each pathogen consists of a number of smaller components that are typically exclusive to that particular pathogen
+                and the sickness it causes. An antigen is the component of a pathogen that stimulates the production of antibodies.
+                An essential component of the immune system are the antibodies created in reaction to the antigen of the infection.
+                Antibodies can be thought of as the soldiers in your body's defensive mechanism. Every antibody in our system is a 
+                soldier that has been trained to detect a particular antigen. Our bodies contain countless varieties of antibodies.
+                When the human body is exposed to an antigen for the first time, it takes time for the immune system to respond and 
+                produce antibodies specific to that antigen.
+            </p>
+            <p>
+                After being created, antigen-specific antibodies interact with the rest of the immune system to eliminate the
+                pathogen and halt the sickness. Except in cases where two viruses are extremely similar to one other, such as 
+                cousins, antibodies to one pathogen typically do not protect against another. In addition to manufacturing 
+                antibodies as part of the body's initial response to an antigen, the body also develops memory cells that 
+                continue to make antibodies even after the pathogen has been eliminated by the antibodies. Because the memory
+                cells are prepared to produce antibodies against that antigen, if the body is exposed to the same disease more 
+                than once, the antibody response is more quicker and more potent than it was the first time.
+            </p>
+            <p>
+                This means that if the person is exposed to the dangerous pathogen in the future, their immune system will be 
+                able to respond immediately, protecting against disease.
+            </p>
+            <img 
+            src="https://media.istockphoto.com/id/1333171480/vector/child-pointing-his-finger-at-the-vaccinated-hand-the-concept-of-health-the-spread-of-the.jpg?s=612x612&w=0&k=20&c=RGNge0ErNgdkwCOwTsS2MzaBvYHgFyFv5oJgaYaqw4o="
+            width="350px"
+            height="400px">
+            <h2>How vaccines help</h2>
+            <p>
+                Antigens — parts of a specific organism (antigen) that cause an immunological reaction in the body — are found in 
+                vaccines. Instead of the actual antigen, more recent vaccinations contain the recipe for making them. 
+                This weakened version won't cause the disease in the person receiving the vaccine, regardless of whether the 
+                vaccine is made up of the antigen itself or the blueprint so that the body will produce the antigen, but it 
+                will prompt their immune system to respond much as it would have on its first reaction to the actual pathogen.
+            </p>
+            <p>
+                Some vaccinations call for several doses, spaced weeks or months apart. It is occasionally necessary 
+                for the establishment of memory cells and the generation of durable antibodies. By developing memory 
+                of the pathogen, the body learns to combat the specific disease-causing organism, enabling it to quickly 
+                respond to future exposure.
+            </p>
+            <h2>Which vaccines do you need?</h2>
+            <p>
+                It is important that you should contact professional advice before taking a vaccine. This is because of
+                the fact that not every vaccine works for everyone. This may be due to underlying health issues that can
+                adversely affect the person. Hence, strong awareness is required of vaccines, and many online resources are available to 
+                help you!
+            </p>
+        </div>
+    </main>
+</Layout>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+    main {
+        margin: auto;
+        padding: 1.5rem;
+        max-width: 100ch;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 0;
+        font-family: 'Comfortaa', cursive;
+    }
+    h2 {
+        color:mediumorchid
+    }
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+
+    .instructions {
+        line-height: 1.6;
+        margin: 1rem 0;
+        border: 1px solid rgba(var(--accent), 25%);
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.4rem;
+    }
+
+    .instructions code {
+        font-size: 0.875em;
+        font-weight: bold;
+        background: rgba(var(--accent), 12%);
+        color: rgb(var(--accent));
+        border-radius: 4px;
+        padding: 0.3em 0.45em;
+    }
+
+    .instructions strong {
+        color: rgb(var(--accent));
+    }
+    .blog {
+        font-size: 1.25rem;
+        color: white;
+
+    }
+</style>

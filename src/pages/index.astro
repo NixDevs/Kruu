@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h1><span class="text-gradient">TrustedUp</span></h1>
+		<p class="instructions">
+			A project created by <strong>Cappuccino Monkeys.</strong> 
+		</p>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="/heart"
+				title="Heart Rate"
+				body="Measure your heart rate."
+			/>
+			<Card
+				href="/calendar"
+				title="Vaccine Calendar"
+				body="View your calendar with reminders on what vaccines you need to take."
+			/>
+			<Card
+				href="/vaccines"
+				title="Vaccine Index"
+				body="Explore the Vaccination Index with all you need to know about vaccines."
+			/>
+			<Card
+				href="/"
+				title="Settings"
+				body="Configure your app"
+			/>
+		</ul>
+	</main>
+</Layout>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+        font-family: 'Comfortaa', cursive;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+
+</style>
