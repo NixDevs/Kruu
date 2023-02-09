@@ -4,5 +4,5 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
     integrations: [],
     site: 'https://nixdevs.github.io',
-    base: "kruu"
+    base: "Kruu"
 });
