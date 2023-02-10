@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
-
+import vercel from '@astrojs/vercel/serverless';
 // https://astro.build/config
 export default defineConfig({
-    site: 'nixdevs.github.io/Kruu',
-    base: '/src'
+    site: 'https://nixdevs.github.io',
+    base: '/'
 });
