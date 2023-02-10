@@ -7,7 +7,8 @@ import Calendar from '../components/Calendar.astro';
 	<main>
 		<h1><span class="text-gradient">TrustedUp</span></h1>
 		<p class="instructions">
-			<strong>Your personalised calendar.</strong> 
+			Your <strong>personalised calendar.</strong><br>
+            <a href="/"><strong>Back Home</strong></a>
 		</p>
         <Calendar></Calendar>
 	</main>
@@ -15,7 +16,10 @@ import Calendar from '../components/Calendar.astro';
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
-	main {
+	html {
+        background-color: black;
+    }
+    main {
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 60ch;
